@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import Root from './client/Root';
 import { Provider } from 'react-redux';
 
+import locale from './locale'
+
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { loadTranslations, setLocale, syncTranslationWithStore, i18nReducer } from 'react-redux-i18n';
+
  
-import locale from './locale'
 
 const store =  createStore(
   combineReducers({
