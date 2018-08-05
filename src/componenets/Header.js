@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { setLocale } from 'react-redux-i18n';
 
 import locale from '../locale'
-import styles from '../styles/index.scss';
+
 
 class Header extends React.Component{
     render(){
